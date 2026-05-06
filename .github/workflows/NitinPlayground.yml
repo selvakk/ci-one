@@ -1,0 +1,21 @@
+name: Nitin's playground
+
+on:
+  workflow_dispatch: 
+
+jobs:
+  playground:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Create zip of repository contents
+        run: |
+          ls -l
+          mkdir Nilan
+          cd Nilan
+          touch 1.txt
+          cd ..
+          ls -lR
+      
