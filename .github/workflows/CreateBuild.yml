@@ -2,6 +2,7 @@ name: Archive repository on push
 
 on:
   push:
+  workflow_dispatch: 
 
 jobs:
   zip-and-upload:
