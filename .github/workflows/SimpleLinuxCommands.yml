@@ -1,0 +1,18 @@
+name: Terraform CI/CD
+
+on:
+  workflow_dispatch:
+
+jobs:
+  MyCommands:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+
+    steps:
+      - name: Linux Commands
+        run: |
+          echo "whoami -->" `whoami`
+          echo "Date -->" `date`
+          echo "Hostname: " `hostname`
